@@ -32,7 +32,7 @@ body:
     attributes:
       label: Предусловия
       description: Состояние системы перед началом тестирования.
-      placeholder: Например: Запущена программа, открыт раздел...
+      placeholder: Например Запущена программа, открыт раздел...
     validations:
       required: false
 
@@ -53,7 +53,7 @@ body:
     attributes:
       label: Ожидаемый результат
       description: Что должно было произойти согласно логике.
-      placeholder: Например: Отображается следующий вопрос теста...
+      placeholder: Например Отображается следующий вопрос теста...
     validations:
       required: true
 
@@ -62,7 +62,7 @@ body:
     attributes:
       label: Фактический результат
       description: Что произошло на самом деле.
-      placeholder: Например: Программа зависает / выдает ошибку...
+      placeholder: Например Программа зависает / выдает ошибку...
     validations:
       required: true
 
