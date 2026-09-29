@@ -6,8 +6,8 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-    value: |
-      Пожалуйста, заполните форму ниже для регистрации дефекта.
+      value: |
+        Пожалуйста, заполните форму ниже для регистрации дефекта.
 
   - type: checkboxes
     id: dublicate_check
