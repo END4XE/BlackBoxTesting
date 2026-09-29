@@ -1,0 +1,101 @@
+name: Отчет о дефекте
+description: Шаблон для создания отчета о найденной ошибке
+title: "[Ошибка]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+    value: |
+      Пожалуйста, заполните форму ниже для регистрации дефекта.
+
+  - type: checkboxes
+    id: dublicate_check
+    attributes:
+      label: Проверка дубликатов
+      description: Убедитесь,что такой баг еще не был заведен.
+      options:
+        - label: Я ознакомился с уже существующими отчетами о дефектах
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Краткое описание дефекта.
+      placeholder: Опишите, в сем заключается ошибка...
+    vaidations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Предусловия
+      description: Состояние систеы перед началом тестирования.
+      placeholder: Например: Запущена программа, открыт раздел...
+    vaidations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Пошаговая инструкция, как вызвать баг.
+      placeholder: |
+      1. Нажать "Приступить к тестам"
+      2. Выбрать тест
+      3. ...
+    vaidations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      description: Что должно было произойти согласно логике.
+      placeholder: Например: Отображается следующий вопрос теста...
+    vaidations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+      description: Что произошло на самом деле.
+      placeholder: Например: Программа зависает / выдает ошибку...
+    vaidations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоты / Доп. материалы
+      description: Прикрепите скриншоты или доп. материалы.
+      placeholder: Вставьте изображения...
+    vaidations:
+      required: false
+
+  - type: droptown
+    id: priority
+    attributes:
+      label: Приоритет
+      description: Важность исправления.
+      options:
+        - High (Высокий)
+        - Medium (Средний)
+        - Low (Низкий)
+    vaidations:
+      required: true
+
+  - type: droptown
+    id: severity
+    attributes:
+      label: Серьезность
+      description: Степень влияния дефекта.
+      options:
+        - Critical (Критическая)
+        - Major (Значительная)
+        - Minor (Незначительная)
+        - Trivial (Тривиальная)
+    vaidations:
+      required: true
