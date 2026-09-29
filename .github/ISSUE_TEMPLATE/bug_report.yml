@@ -24,16 +24,16 @@ body:
       label: Описание
       description: Краткое описание дефекта.
       placeholder: Опишите, в сем заключается ошибка...
-    vaidations:
+    validations:
       required: true
 
   - type: textarea
     id: preconditions
     attributes:
       label: Предусловия
-      description: Состояние систеы перед началом тестирования.
+      description: Состояние системы перед началом тестирования.
       placeholder: Например: Запущена программа, открыт раздел...
-    vaidations:
+    validations:
       required: false
 
   - type: textarea
@@ -45,7 +45,7 @@ body:
       1. Нажать "Приступить к тестам"
       2. Выбрать тест
       3. ...
-    vaidations:
+    validations:
       required: true
 
   - type: textarea
@@ -54,7 +54,7 @@ body:
       label: Ожидаемый результат
       description: Что должно было произойти согласно логике.
       placeholder: Например: Отображается следующий вопрос теста...
-    vaidations:
+    validations:
       required: true
 
   - type: textarea
@@ -63,7 +63,7 @@ body:
       label: Фактический результат
       description: Что произошло на самом деле.
       placeholder: Например: Программа зависает / выдает ошибку...
-    vaidations:
+    validations:
       required: true
 
   - type: textarea
@@ -72,7 +72,7 @@ body:
       label: Скриншоты / Доп. материалы
       description: Прикрепите скриншоты или доп. материалы.
       placeholder: Вставьте изображения...
-    vaidations:
+    validations:
       required: false
 
   - type: droptown
@@ -84,7 +84,7 @@ body:
         - High (Высокий)
         - Medium (Средний)
         - Low (Низкий)
-    vaidations:
+    validations:
       required: true
 
   - type: droptown
@@ -97,5 +97,5 @@ body:
         - Major (Значительная)
         - Minor (Незначительная)
         - Trivial (Тривиальная)
-    vaidations:
+    validations:
       required: true
